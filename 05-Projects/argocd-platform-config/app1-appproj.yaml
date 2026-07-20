@@ -2,12 +2,11 @@ apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
   name: app1-project
-  namespace: argocd
+  namespace: wealth
 spec:
   description: Project for App1 frontend and backend workloads
   sourceRepos:
-    - https://github.com/CloudWithVarJosh/app1-frontend-config.git
-    - https://github.com/CloudWithVarJosh/app1-backend-config.git
+    - https://github.com/bharath9200/argocd-test.git
   destinations:
     - namespace: app1-*
       server: https://kubernetes.default.svc
